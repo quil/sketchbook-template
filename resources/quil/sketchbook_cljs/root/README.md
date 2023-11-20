@@ -11,7 +11,8 @@ Invoke a library API function from the command-line:
     $ clojure -X {{top/ns}}.{{main/ns}}/foo :a 1 :b '"two"'
     {:a 1, :b "two"} "Hello, World!"
 
-To compile and view the default sketch
+To compile and view the default sketch with the
+[ClojureScript](https://clojurescript.org/guides/quick-start) compiler:
 
     $ clojure -M:cljs-compile --repl
 
@@ -19,7 +20,8 @@ Clean the js output above using:
 
     $ clojure -T:build clean
 
-Alternatively, figwheel-main for live reload on save after editing files in `src` or `resources/public/css`:
+Alternatively, use the [Figwheel](https://figwheel.org/) repl for live reload on
+save after editing files in `src` or `resources/public/css`:
 
     $ clojure -M:fig -b dev --repl
 
