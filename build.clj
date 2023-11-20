@@ -3,7 +3,8 @@
   (:require [clojure.tools.build.api :as b]))
 
 ;; clojure -T:build test
-(defn test "Run all the tests." [opts]
+(defn test "Run all the tests."
+  [opts]
   (let [basis    (b/create-basis {:aliases [:test]})
         cmds     (b/java-command
                   {:basis      basis

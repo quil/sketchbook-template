@@ -2,7 +2,17 @@
   (:refer-clojure :exclude [test])
   (:require [clojure.tools.build.api :as b]))
 
-(defn test "Run all the tests." [opts]
+;; clojure -T:build clean
+(defn clean
+  "Remove cljs compiler output files"
+  []
+  (b/delete {:path "resources/public/js/main.cljs"})
+  (b/delete {:path "resources/public/js/out"})
+  (b/delete {:path "target"}))
+
+;; clojure -T:build test
+(defn test "Run all the tests."
+  [opts]
   (let [basis    (b/create-basis {:aliases [:test]})
         cmds     (b/java-command
                   {:basis      basis

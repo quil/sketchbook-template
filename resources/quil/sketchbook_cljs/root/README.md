@@ -15,7 +15,11 @@ To compile and view the default sketch
 
     $ clojure -M:cljs-compile --repl
 
-Or using figwheel-main for live reload on save after editing files in `src` or `resources/public/css`:
+Clean the js output above using:
+
+    $ clojure -T:build clean
+
+Alternatively, figwheel-main for live reload on save after editing files in `src` or `resources/public/css`:
 
     $ clojure -M:fig -b dev --repl
 
