@@ -11,6 +11,8 @@ Invoke a library API function from the command-line:
     $ clojure -X {{top/ns}}.{{main/ns}}/foo :a 1 :b '"two"'
     {:a 1, :b "two"} "Hello, World!"
 
+    $ clj -M --main cljs.main --compile {{top/ns}}.{{main/ns}} --repl
+
 Run the project's tests (they'll fail until you edit them):
 
     $ clojure -T:build test
