@@ -32,7 +32,6 @@
       ;; Draw the circle.
       (q/ellipse x y 100 100))))
 
-;; this function is called in index.html
 (defn ^:export run-sketch []
   (q/defsketch {{sketch}}
     :host "{{host}}"
@@ -48,4 +47,4 @@
     :middleware [m/fun-mode]))
 
 ;; uncomment this line to reset the sketch:
-;; (run-sketch)
+(defonce the-sketch (run-sketch))
