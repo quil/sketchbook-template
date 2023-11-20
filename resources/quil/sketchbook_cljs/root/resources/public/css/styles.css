@@ -1,0 +1,9 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+#{{host}} {
+  padding: 0.5em;
+  border: 1px dashed #ddd;
+}

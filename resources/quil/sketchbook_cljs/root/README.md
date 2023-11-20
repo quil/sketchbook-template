@@ -11,7 +11,13 @@ Invoke a library API function from the command-line:
     $ clojure -X {{top/ns}}.{{main/ns}}/foo :a 1 :b '"two"'
     {:a 1, :b "two"} "Hello, World!"
 
-    $ clj -M --main cljs.main -co dev.edn -ro repl.edn --compile {{top/ns}}.{{main/ns}} --repl
+To compile and view the default sketch
+
+    $ clojure -M:cljs-compile --repl
+
+Or using figwheel-main for live reload on save:
+
+    $ clojure -M:fig -b dev --repl
 
 Run the project's tests (they'll fail until you edit them):
 
