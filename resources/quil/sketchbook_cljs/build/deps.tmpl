@@ -1,13 +1,18 @@
+;; https://clojure.org/guides/deps_and_cli
 {:paths ["src" "resources"]
  :deps {org.clojure/clojure {:mvn/version "1.11.1"}
         org.clojure/clojurescript {:mvn/version "1.11.60"}
         quil/quil {:mvn/version "4.3.1323"}}
  :aliases
- {:fig
+ {;; figwheel live-reloading repl
+  ;; clojure -M:fig -b dev --repl
+  :fig
   {:extra-deps {com.bhauman/figwheel-main {:mvn/version "0.2.18"}
                 com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
    :extra-paths ["target"]
    :main-opts ["-m" "figwheel.main"]}
+  ;; ClojureScript repl
+  ;; clojure -Mcljs-compile --repl
   :cljs-compile
   {:main-opts ["-m" "cljs.main"
                "--compile-opts" "cljs-compile.edn"
@@ -18,6 +23,7 @@
    :extra-deps {org.clojure/test.check {:mvn/version "1.1.1"}
                 io.github.cognitect-labs/test-runner
                 {:git/tag "v0.5.1" :git/sha "dfb30dd"}}}
+  ;; clojure -T:build test
   :build
   {:deps {io.github.clojure/tools.build {:mvn/version "0.9.6"}}
    :ns-default build}}}

@@ -15,7 +15,7 @@ To compile and view the default sketch
 
     $ clojure -M:cljs-compile --repl
 
-Or using figwheel-main for live reload on save:
+Or using figwheel-main for live reload on save after editing files in `src` or `resources/public/css`:
 
     $ clojure -M:fig -b dev --repl
 

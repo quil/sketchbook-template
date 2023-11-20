@@ -1,2 +1,4 @@
+;; Figwheel configuration
+;; https://figwheel.org/config-options.html
 {:watch-dirs ["src"]
  :css-dirs ["resources/public/css"]}
