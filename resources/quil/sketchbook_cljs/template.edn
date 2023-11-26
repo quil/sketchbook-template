@@ -2,9 +2,9 @@
  :sketch "a-sketch"
  :host "sketch-host"
  ;; this does not transform the data but does print a message:
- :data-fn quil.sketchbook-cljs/data-fn
+ ;; :data-fn quil.sketchbook-cljs/data-fn
  ;; this does not transform the EDN but does print a message:
- :template-fn quil.sketchbook-cljs/template-fn
+ ;; :template-fn quil.sketchbook-cljs/template-fn
  :transform
  [["build" ""
    {"build.tmpl" "build.clj"
