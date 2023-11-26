@@ -6,15 +6,12 @@
 
 FIXME: write usage documentation!
 
-Invoke a library API function from the command-line:
-
-    $ clojure -X {{top/ns}}.{{main/ns}}/foo :a 1 :b '"two"'
-    {:a 1, :b "two"} "Hello, World!"
-
 To compile and view the default sketch with the
 [ClojureScript](https://clojurescript.org/guides/quick-start) compiler:
 
-    $ clojure -M:cljs-compile --repl
+    $ clojure -M:cljs-repl
+
+The cljs compiler is configured to look for changes in the "src" directory, and will recompile the project on any changes. Refresh the browser after recompilation completes to see those changes reflected in the sketch.
 
 Clean the js output above using:
 

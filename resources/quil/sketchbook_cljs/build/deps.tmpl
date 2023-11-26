@@ -11,15 +11,17 @@
                 com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
    :extra-paths ["target"]
    :main-opts ["-m" "figwheel.main"]}
-  ;; ClojureScript repl
-  ;; clojure -Mcljs-compile --repl
-  :cljs-compile
+  ;; ClojureScript REPL
+  ;; clojure -Mcljs-repl
+  :cljs-repl
   {:main-opts ["-m" "cljs.main"
                "--compile-opts" "cljs-compile.edn"
                ;; https://clojurescript.org/reference/repl-options
                ;; static-dir adds resources/public to path looking for index.html
-               "--repl-opts" "{:static-dir [\".\" \"out\" \"resources\"]}"
-               "--compile" "{{top/ns}}.{{main/ns}}"]}
+               "--repl-opts" "{:static-dir [\".\" \"out\" \"resources/public\"]}"
+               "--watch" "src"
+               "--compile" "{{top/ns}}.{{main/ns}}"
+               "--repl"]}
   :test
   {:extra-paths ["test"]
    :extra-deps {org.clojure/test.check {:mvn/version "1.1.1"}

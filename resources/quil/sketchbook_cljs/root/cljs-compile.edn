@@ -1,4 +1,4 @@
-;; compiler configuration for cljs-compile
+;; compiler configuration for cljs-repl
 ;; https://clojurescript.org/reference/compiler-options
 {:asset-path "js/out"
  :output-to "resources/public/js/main.js"
