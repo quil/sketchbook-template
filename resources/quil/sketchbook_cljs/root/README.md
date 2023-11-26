@@ -17,10 +17,12 @@ Clean the js output above using:
 
     $ clojure -T:build clean
 
-Alternatively, use the [Figwheel](https://figwheel.org/) repl for live reload on
-save after editing files in `src` or `resources/public/css`:
+
+Alternatively, use the [Figwheel](https://figwheel.org/) repl for live reload on save after editing any files in `src` or `resources/public/css`:
 
     $ clojure -M:fig -b dev --repl
+
+Figwheel copies relevant files from resources/public into a target directory with compiled assets in a relative path.
 
 Run the project's tests (they'll fail until you edit them):
 
