@@ -16,7 +16,9 @@
   :cljs-compile
   {:main-opts ["-m" "cljs.main"
                "--compile-opts" "cljs-compile.edn"
-               "--repl-opts" "repl.edn"
+               ;; https://clojurescript.org/reference/repl-options
+               ;; static-dir adds resources/public to path looking for index.html
+               "--repl-opts" "{:static-dir [\".\" \"out\" \"resources\"]}"
                "--compile" "{{top/ns}}.{{main/ns}}"]}
   :test
   {:extra-paths ["test"]

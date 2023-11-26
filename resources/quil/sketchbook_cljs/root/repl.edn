@@ -1,4 +1,0 @@
-;; repl configuration for cljs-compile
-;; https://clojurescript.org/reference/repl-options
-{;; look in resources/public for root index.html
- :static-dir ["resources/public"]}
