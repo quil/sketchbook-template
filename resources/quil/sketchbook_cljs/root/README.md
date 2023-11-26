@@ -26,6 +26,12 @@ Run the project's tests (they'll fail until you edit them):
 
     $ clojure -T:build test
 
+## Resources
+
+* [Quil](https://github.com/quil/quil)
+* [Quil API Reference](http://quil.info/api)
+* [Start a Clojurescript App From Scratch](https://betweentwoparens.com/blog/start-a-clojurescript-app-from-scratch) gives some more details on clojurescript configuration.
+
 ## License
 
 Copyright © {{now/year}} {{developer}}
