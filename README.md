@@ -1,5 +1,7 @@
 # Quil Sketchbook Templates
 
+Generate a sketchbook for building [Quil](https://github.com/quil/quil) sketches
+
 ## Usage
 
 This is a template project for use with [deps-new](https://github.com/seancorfield/deps-new).
@@ -7,8 +9,8 @@ As originally generated, it will produce a new library project when run from a l
 
 ```
 $ clojure -Sdeps '{:deps {io.github.quil/sketchbook-template {:local/root "."}}}' \
-  -Tnew create :template quil/sketchbook-cljs :name username/sketches \
-  :target-dir sketches :overwrite delete
+  -Tnew create :template quil/sketchbook-cljs :name username.sketchbook \
+  :target-dir sketchbook
 ```
 
 Assuming you have installed `deps-new` as your `new` "tool" via:
