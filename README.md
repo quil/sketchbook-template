@@ -28,4 +28,4 @@ file -- that it is valid EDN and it satisfies the `deps-new` Spec for template f
 
 ## License
 
-Copyright © 2023 Charles L.G. Comstock
+Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
