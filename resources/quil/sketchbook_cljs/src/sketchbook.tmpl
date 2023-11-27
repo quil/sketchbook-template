@@ -33,7 +33,7 @@
       (q/ellipse x y 100 100))))
 
 (defn ^:export run-sketch []
-  (q/defsketch {{sketch}}
+  (q/defsketch rotating-ball
     :host "{{host}}"
     :size [500 500]
     ;; setup function called only once, during sketch initialization.
