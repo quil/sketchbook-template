@@ -8,7 +8,7 @@ This is a template project for use with [deps-new](https://github.com/seancorfie
 As originally generated, it will produce a new library project when run from a local checkout:
 
 ```
-$ clojure -Sdeps '{:deps {io.github.quil/sketchbook-template {:local/root "."}}}' \
+$ clojure -Sdeps '{:deps {io.github.quil/sketchbook-template {:git/sha "38c225812bbe477f2ce739ee9517f7a8f143cba2"}}}' \
   -Tnew create :template quil/sketchbook-cljs :name username.sketchbook \
   :target-dir sketchbook
 ```
@@ -18,8 +18,6 @@ Assuming you have installed `deps-new` as your `new` "tool" via:
 ```bash
 clojure -Ttools install-latest :lib io.github.seancorfield/deps-new :as new
 ```
-
-> Note: once the template has been published (to a public git repo), the invocation will be the same, except the `:local/root` dependency will be replaced by a git or Maven-like coordinate.
 
 Run this template project's tests (by default, this just validates your template's `template.edn`
 file -- that it is valid EDN and it satisfies the `deps-new` Spec for template files):
