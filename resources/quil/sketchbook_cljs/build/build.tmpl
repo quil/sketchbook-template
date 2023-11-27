@@ -5,10 +5,11 @@
 ;; clojure -T:build clean
 (defn clean
   "Remove cljs compiler output files"
-  []
+  [opts]
   (b/delete {:path "resources/public/js/main.cljs"})
   (b/delete {:path "resources/public/js/out"})
-  (b/delete {:path "target"}))
+  (b/delete {:path "target"})
+  opts)
 
 ;; clojure -T:build test
 (defn test "Run all the tests."
