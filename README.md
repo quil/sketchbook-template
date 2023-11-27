@@ -10,7 +10,7 @@ This is a template project for use with [deps-new](https://github.com/seancorfie
 It will produce a new quil sketchbook using a specific revision of this repository using:
 
 ```
-clojure -Sdeps '{:deps {io.github.quil/sketchbook-template {:git/sha "38c225812bbe477f2ce739ee9517f7a8f143cba2"}}}' \
+clojure -Sdeps '{:deps {io.github.quil/sketchbook-template {:git/sha "0246730c65eea3b1489fb0b81c477ac71a129a12"}}}' \
   -Tnew create :template quil/sketchbook-cljs :name username.sketchbook \
   :target-dir sketchbook
 ```
