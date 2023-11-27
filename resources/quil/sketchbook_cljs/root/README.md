@@ -4,8 +4,6 @@
 
 ## Usage
 
-FIXME: write usage documentation!
-
 To compile and view the default sketch with the
 [ClojureScript](https://clojurescript.org/guides/quick-start) compiler:
 
@@ -16,7 +14,6 @@ The cljs compiler is configured to look for changes in the "src" directory, and 
 Clean the js output above using:
 
     $ clojure -T:build clean
-
 
 Alternatively, use the [Figwheel](https://figwheel.org/) repl for live reload on save after editing any files in `src` or `resources/public/css`:
 
