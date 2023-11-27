@@ -6,7 +6,7 @@
 (defn clean
   "Remove cljs compiler output files"
   [opts]
-  (b/delete {:path "resources/public/js/main.cljs"})
+  (b/delete {:path "resources/public/js/sketchbook.js"})
   (b/delete {:path "resources/public/js/out"})
   (b/delete {:path "target"})
   opts)

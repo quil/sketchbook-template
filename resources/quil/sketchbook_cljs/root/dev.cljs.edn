@@ -2,6 +2,6 @@
 ;; https://figwheel.org/docs/create_a_build.html
 ;; ie clojure -M:fig -b dev --repl
 {:asset-path "cljs-out/dev"
- :output-to "target/public/js/main.js"
+ :output-to "target/public/js/sketchbook.js"
  :output-dir "target/public/cljs-out/dev"
  :main {{raw-name/ns}}.sketchbook}
