@@ -20,7 +20,7 @@
                ;; static-dir adds resources/public to path looking for index.html
                "--repl-opts" "{:static-dir [\".\" \"out\" \"resources/public\"]}"
                "--watch" "src"
-               "--compile" "{{top/ns}}.{{main/ns}}"
+               "--compile" "{{raw-name/ns}}.sketchbook"
                "--repl"]}
   :test
   {:extra-paths ["test"]

@@ -4,4 +4,4 @@
 {:asset-path "cljs-out/dev"
  :output-to "target/public/js/main.js"
  :output-dir "target/public/cljs-out/dev"
- :main {{top/ns}}.{{main/ns}}}
+ :main {{raw-name/ns}}.sketchbook}

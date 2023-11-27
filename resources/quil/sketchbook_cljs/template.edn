@@ -10,7 +10,7 @@
    {"build.tmpl" "build.clj"
     "deps.tmpl"  "deps.edn"}
    :only]
-  ["src" "src/{{top/file}}"
-   {"main.tmpl" "{{main/file}}.cljs"}]
-  ["test" "test/{{top/file}}"
-   {"main_test.tmpl" "{{main/file}}_test.cljc"}]]}
+  ["src" "src/{{raw-name/file}}"
+   {"main.tmpl" "sketchbook.cljs"}]
+  ["test" "test/{{raw-name/file}}"
+   {"main_test.tmpl" "sketchbook_test.cljc"}]]}
