@@ -15,7 +15,7 @@ clojure -Sdeps '{:deps {io.github.quil/sketchbook-template {:git/sha "0246730c65
   :target-dir sketchbook
 ```
 
-This will create a new sketchbook the `sketchbook` directory. The README in that
+This will create a new sketchbook in the `sketchbook` directory. The `README.md` in that
 directory has instructions on how to work with a sketchbook.
 
 These instructions assume that `deps-new` has been installed as the `new` "tool" via:
