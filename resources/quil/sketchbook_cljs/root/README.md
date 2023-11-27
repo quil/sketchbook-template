@@ -4,7 +4,7 @@
 
 ## Usage
 
-To compile and view the default sketch with the
+To compile and view the default rotating-ball sketch with the
 [ClojureScript](https://clojurescript.org/guides/quick-start) compiler:
 
     $ clojure -M:cljs-repl
@@ -17,7 +17,9 @@ Clean the js output above using:
 
 Alternatively, use the [Figwheel](https://figwheel.org/) repl for live reload on save after editing any files in `src` or `resources/public/css`:
 
-    $ clojure -M:fig -b dev --repl
+    $ clojure -M:fig:repl
+
+Try editing `src/{{raw-ns/file}}/rotating_ball.cljs` so that the line reading `(q/background 240)` reads `(q/background 0)`. Once the sketch recompiles, the canvas should show a black background.
 
 Figwheel copies relevant files from resources/public into a target directory with compiled assets in a relative path.
 
