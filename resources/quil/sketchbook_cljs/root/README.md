@@ -4,26 +4,25 @@
 
 ## Usage
 
-To compile and view the default rotating-ball sketch with the
-[ClojureScript](https://clojurescript.org/guides/quick-start) compiler:
-
-    $ clojure -M:cljs-repl
-
-The cljs compiler is configured to look for changes in the "src" directory, and will recompile the project on any changes. Refresh the browser after recompilation completes to see those changes reflected in the sketch.
-
-Clean the js output above using:
-
-    $ clojure -T:build clean
-
-Alternatively, use the [Figwheel](https://figwheel.org/) repl for live reload on save after editing any files in `src` or `resources/public/css`:
+To compile and view the default rotating-ball sketch using [Figwheel](https://figwheel.org/):
 
     $ clojure -M:fig:repl
 
-Try editing `src/{{raw-ns/file}}/rotating_ball.cljs` so that the line reading `(q/background 240)` reads `(q/background 0)`. Once the sketch recompiles, the canvas should show a black background.
+Figwheel is a Read-Eval-Print-Loop (REPL) that supports live reload on save after editing any files in the `src` and `resources/public/css` directories and evaluating ClojureScript expressions sent directly from an editor.
 
-Figwheel copies relevant files from resources/public into a target directory with compiled assets in a relative path.
+After Figwheel downloads the dependencies and compiles the project, it should open a browser tab displaying a canvas with a rotating ball cycling through colors. Try editing `src/{{raw-ns/file}}/rotating_ball.cljs` so that the line with `(q/background 240)` reads `(q/background 0)` and then saving the file. Once the sketch recompiles, the canvas should show a black background instead of the initial gray. After that, experiment with the expressions in the `update-state` function to change the rotation speed, direction or rate of color change.
 
-Run the project's tests (they'll fail until you edit them):
+Figwheel copies relevant files from `resources/public` into a `target` directory with the compiled JavaScript assets in a relative path. 
+
+Alternatively, to compile with the [ClojureScript](https://clojurescript.org/guides/quick-start) compiler directly use:
+
+    $ clojure -M:cljs-repl
+
+This will create `resources/public/js/sketchbook.js` which will display after the sketch after browsing `resources/public/index.html`. To clean this js output above use:
+
+    $ clojure -T:build clean
+
+To run the project's tests in the JVM (they'll fail until you edit them):
 
     $ clojure -T:build test
 
