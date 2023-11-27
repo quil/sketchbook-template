@@ -10,6 +10,7 @@
     "deps.tmpl"  "deps.edn"}
    :only]
   ["src" "src/{{raw-name/file}}"
-   {"sketchbook.tmpl" "sketchbook.cljs"}]
+   {"sketchbook.tmpl" "sketchbook.cljs"
+    "rotating_ball.tmpl" "rotating_ball.cljs"}]
   ["test" "test/{{raw-name/file}}"
    {"sketchbook_test.tmpl" "sketchbook_test.cljc"}]]}
